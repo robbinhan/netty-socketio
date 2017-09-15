@@ -3,7 +3,7 @@
 
  <groupId>com.corundumstudio.socketio</groupId>
  <artifactId>netty-socketio</artifactId>
- <version>1.7.13-SNAPSHOT</version>
+ <version>1.7.14-SNAPSHOT</version>
  <packaging>bundle</packaging>
  <name>NettySocketIO</name>
  <description>Socket.IO server implemented on Java</description>
@@ -185,7 +185,7 @@
     <dependency>
         <groupId>org.redisson</groupId>
         <artifactId>redisson</artifactId>
-        <version>2.4.0</version>
+        <version>3.5.3</version>
         <scope>provided</scope>
     </dependency>
     <dependency>
@@ -229,9 +229,9 @@
             </execution>
           </executions>
           <configuration>
-            <linkXref>true</linkXref>
+            <!--<linkXref>true</linkXref>-->
             <minimumTokens>100</minimumTokens>
-            <targetJdk>1.6</targetJdk>
+            <targetJdk>1.8</targetJdk>
             <verbose>true</verbose>
           </configuration>
         </plugin>
@@ -259,10 +259,10 @@
          <artifactId>maven-compiler-plugin</artifactId>
          <version>3.1</version>
          <configuration>
-           <source>1.6</source>
-           <target>1.6</target>
+           <source>1.8</source>
+           <target>1.8</target>
            <optimize>true</optimize>
-           <showDeprecations>true</showDeprecations>
+           <!--<showDeprecations>true</showDeprecations>-->
          </configuration>
        </plugin>
 
